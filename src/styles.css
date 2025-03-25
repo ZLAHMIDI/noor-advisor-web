@@ -1,0 +1,61 @@
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.chat-window {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.bubble {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.bubble.user {
+  background: #dbeafe;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bubble.bot {
+  background: #fef9c3;
+  align-self: flex-start;
+}
+
+.review-label {
+  font-size: 0.75rem;
+  color: #555;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+.chat-input button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+}
