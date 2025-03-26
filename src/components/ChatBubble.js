@@ -1,14 +1,9 @@
 import React from 'react';
 
-const ChatBubble = ({ type, text, reviewed }) => {
+const ChatBubble = ({ type, text, className }) => {
   return (
-    <div className={`bubble ${type}`}>
+    <div className={`bubble ${type} ${className || ''}`} dir={className === 'arabic' ? 'rtl' : 'ltr'}>
       <p>{text}</p>
-      {type === 'bot' && reviewed !== undefined && (
-        <span className="review-label">
-          {reviewed ? '✅ Reviewed by Scholar' : '⚠️ Pending Review'}
-        </span>
-      )}
     </div>
   );
 };
